@@ -3,15 +3,18 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>ODIN Sign-up</title>
-
 </head>
 <body>
     <div class="main-container">
         <div class="leftPanel">
             <div class="odin-logo-container">
-                <img class="odin-logo" src="imgs/odin-lined.png">
+                <img class="odin-logo" src="imgs/odin-lined.png" alt="norse-viking-logo">
                 <p>ODIN</p>
+            </div>
+            <div class="image-credits">
+                <p>Photo by <span>Mourad Saadi</span> on <a href="https://unsplash.com/photos/ocean-wave-at-beach-GyDktTa0Nmw">Unsplash</a></p>
             </div>
         </div>
         <div class="rightPanel">
@@ -51,7 +54,7 @@
 
                             <label>
                                 PHONE NUMBER:
-                                <input type="text" id="phone" name="phone" required>
+                                <input id="phone" name="phone" required type="number">
                             </label>
 
                             <label>
@@ -59,11 +62,14 @@
                                 <input type="password" id="confirm" name="confirm" required>
                             </label>
                         </div>
-
                     </form>
             </div>
             <div class="bottom-panel">
-                <button form="form" type="submit">Submit button</button>
+                <button class="submit-btn" form="form" type="submit">Create Account</button>
+                <div>
+                    <p>Already have an account? </p>
+                    <a>Log in</a>
+                </div>
             </div>
         </div>
     </div>
